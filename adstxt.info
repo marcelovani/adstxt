@@ -1,0 +1,6 @@
+name = ads.txt
+description = "Generates the ads.txt file dynamically and gives you the chance to edit it, on a per-site basis, from the web UI."
+package = Advertising
+core = 7.x
+files[] = adstxt.test
+configure = admin/config/system/adstxt
