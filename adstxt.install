@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the adstxt module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function adstxt_install() {
+  $content = file_get_contents(drupal_get_path('module', 'adstxt') . '/ads.txt');
+
+  variable_set('adstxt', $content);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function adstxt_uninstall() {
+  variable_del('adstxt');
+}
