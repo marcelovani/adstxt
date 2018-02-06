@@ -16,9 +16,9 @@ function adstxt_requirements($phase) {
     case 'runtime':
       if (file_exists(DRUPAL_ROOT . '/ads.txt')) {
         $requirements['adstxt_file'] = array(
-          'title' => $t('AdsTxt'),
+          'title' => $t('Ads.txt'),
           'severity' => REQUIREMENT_WARNING,
-          'value' => $t('AdsTxt module works only if you remove the existing ads.txt file in your website root.'),
+          'value' => $t('Ads.txt module works only if you remove the existing ads.txt file in your website root.'),
         );
       }
   }
