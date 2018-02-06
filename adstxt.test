@@ -82,7 +82,7 @@ class AdsTxtBasicTestCase extends DrupalWebTestCase {
     // Modify and save the ads.txt content.
     $edit = array();
     $test_string = "# SimpleTest {$this->testId}";
-    $edit['adstxt'] = "#\n{$test_string}\n#\n" . variable_get('adstxt', '');
+    $edit['adstxt'] = "#PHP_EOL{$test_string}PHP_EOL#PHP_EOL" . variable_get('adstxt', '');
     $this->drupalPost('admin/config/system/adstxt', $edit, t('Save configuration'));
 
     // Confirm that output contains changes.

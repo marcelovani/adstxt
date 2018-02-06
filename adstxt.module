@@ -66,7 +66,7 @@ function adstxt_callback() {
   $content = array_filter($content);
 
   drupal_add_http_header('Content-type', 'text/plain');
-  echo implode("\n", $content);
+  echo implode(PHP_EOL, $content);
   drupal_page_footer();
   exit;
 }
