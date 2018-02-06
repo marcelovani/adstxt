@@ -6,6 +6,26 @@
  */
 
 /**
+ * Implements hook_requirements().
+ */
+function adstxt_requirements($phase) {
+  $requirements = array();
+  $t = get_t();
+
+  switch ($phase) {
+    case 'runtime':
+      if (file_exists(DRUPAL_ROOT . '/ads.txt')) {
+        $requirements['adstxt_file'] = array(
+          'title' => $t('AdsTxt'),
+          'severity' => REQUIREMENT_WARNING,
+          'value' => $t('AdsTxt module works only if you remove the existing ads.txt file in your website root.'),
+        );
+      }
+  }
+  return $requirements;
+}
+
+/**
  * Implements hook_install().
  */
 function adstxt_install() {
