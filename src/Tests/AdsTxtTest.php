@@ -2,14 +2,14 @@
 
 namespace Drupal\adstxt\Tests;
 
-use Drupal\simpletest\WebTestBase;
+use Drupal\Tests\BrowserTestBase;
 
 /**
  * Tests functionality of configured ads.txt files.
  *
  * @group Ads.txt
  */
-class AdsTxtTest extends WebTestBase {
+class AdsTxtTest extends BrowserTestBase {
 
   protected $profile = 'standard';
 
