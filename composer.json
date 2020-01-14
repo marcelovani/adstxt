@@ -1,24 +1,11 @@
 {
-    "name": "drupal/captcha_keypad",
-    "description": "This module provides an alternative captcha security.",
-    "keywords": ["security", "anti-spam", "bot"],
-    "type": "drupal-module",
-    "homepage": "http://drupal.org/project/captcha_keypad",
-    "authors": [
-        {
-            "name": "Marcelo Vani",
-            "email": "marcellovani@yahoo.co.uk",
-            "homepage": "https://about.me/marcelovani",
-            "role": "Maintainer"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0"
-    },
-    "support": {
-        "issues": "http://drupal.org/project/captcha_keypad",
-        "source": "http://cgit.drupalcode.org/captcha_keypad"
-    },
-    "license": "GPL-2.0+",
-    "minimum-stability": "dev"
+  "name": "drupal/adstxt",
+  "description": "Generates the ads.txt file dynamically and gives you the chance to edit it, on a per-site basis, from the web UI.",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/adstxt",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/adstxt",
+    "source": "http://git.drupal.org/project/adstxt.git"
+  },
+  "license": "GPL-2.0+"
 }
